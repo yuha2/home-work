@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center; /* 가로 중앙정렬 */
+  align-items: center; /* 세로 중앙정렬 */
+  height: 100vh; /* 화면 전체 높이를 차지하도록 */
+}
+
+.avatars-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  width: 420px;
+  height: 225px;
+}
+
+ul {
+  list-style-type: none; /* 리스트의 기본 기호를 없앰 */
+  padding: 0; /* 기본 들여쓰기를 제거 */
+  margin: 0; /* 기본 여백을 제거 */
+}
+
+li {
+  display: inline-block; /* 잉미지와 동그라미를 한 줄로 배치 */
+  position: relative; /* 부모 요소에 상대적인 위치 설정 */
+  margin: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.status {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  bottom: 0; /* 이미지 하단에 맞추기 */
+  right: 0; /* 이미지 우측에 맞추기 */
+  border: 2px solid white;
+  z-index: 2;
+}
+
+.online {
+  background-color: #4bfe88;
+}
+
+.offline {
+  background-color: #dbdbdb;
+}
